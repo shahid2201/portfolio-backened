@@ -6,7 +6,9 @@ const nodemailer = require('nodemailer');
 const sarcasticSuggestionRoute = require('./routes/sarcasticSuggestion');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://shahid2201.github.io'
+}));
 app.use(express.json());
 
 app.use('/api/sarcastic-suggestion', sarcasticSuggestionRoute);
