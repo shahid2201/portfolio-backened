@@ -1,0 +1,4 @@
+# In server/.gitignore
+node_modules/
+build/
+.env
